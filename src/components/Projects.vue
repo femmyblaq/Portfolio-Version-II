@@ -397,7 +397,7 @@
     </div>
     <div class="my-5 d-flex justify-content-center">
       <button
-        class="btn btn-lg btn-outline-success rounded-0 py-2 px-4"
+        class="btn btn-lg btn-outline-success rounded-0 p-4"
         style="font-family: 'Roboto Mono'"
       >
         View all Projects 🚀
