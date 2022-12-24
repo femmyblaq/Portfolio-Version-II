@@ -1,9 +1,20 @@
 <template>
   <div>
     <div id="contact-heros">
-      <!-- <img class="position-absolute h-50 w-100" src="imgs/TechnologyDesign.png" alt=""> -->
-      <h1 class="mx-5">Contact me</h1>
-      <i class="fas fa-arrow-right"></i>
+      <div class="contact-home">
+        <!-- <img class="position-absolute h-50 w-100" src="imgs/TechnologyDesign.png" alt=""> -->
+        <div class="px-5 text-center">
+          <h1 data-aos="fade-right" class="">Contact me</h1>
+          <div data-aos="fade-up" class="d-flex justify-content-center">
+            <span class="text-center"
+              ><router-link class="mx-3 text-decoration-none text-dark" to="/"
+                >Home</router-link
+              ><i class="fas fa-arrow-right"></i
+              ><span class="mx-3">Contact</span></span
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <div id="contact" class="row mx-auto d-flex justify-content-center">
       <div class="col-lg-5">
@@ -18,25 +29,27 @@
             possible. Thank you.
           </p>
         </div>
-        <div class="d-flex">
+        <div data-aos="flip-right" class="d-flex">
           <i class="fas fa-map-pin fa-1x"></i>
           <p class="ms-3">Yaba Colledge of Technology, Lagos Nigeria.</p>
         </div>
-        <div class="d-flex">
+        <div data-aos="flip-right" class="d-flex">
           <i class="fas fa-phone fa-1x"></i>
           <p class="ms-3">+234 9016290149</p>
         </div>
-        <div class="d-flex">
+        <div data-aos="flip-right" class="d-flex">
           <i class="fas fa-mail-bulk fa-1x"></i>
           <p class="ms-3">femmyblaq@gmail.com / phemmyhy@gmail.com</p>
         </div>
         <ul class="social-media list-unstyled mb-0 d-flex">
           <li
+            data-aos="flip-right"
             class="d-flex justify-content-center shadow-sm align-items-center github"
           >
             <a href="" class="text-dark"><i class="fab fa-1x fa-github"></i></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm linked-in"
           >
             <a href="" class="text-dark"
@@ -44,6 +57,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm instagram"
           >
             <a href="" class="text-dark"
@@ -51,6 +65,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm facebook"
           >
             <a href="" class="text-dark"
@@ -58,6 +73,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm twitter"
           >
             <a href="" class="text-dark"
@@ -65,6 +81,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm whatsapp"
           >
             <a href="" class="text-dark"
@@ -79,62 +96,16 @@
         </ul>
       </div>
       <div class="col-lg-1" style="border-right: 4px dotted #023020"></div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 snd-col">
         <div class="top-content text-center">
           <!-- <p style="color: #023020; font-family: 'Roboto Mono'; font-size: 1rem;" class="m-0"><span>04.
                     </span>What's
                     Next?</p> -->
-          <h2 class="fw-bold" style="color: #023020">Say Hello!</h2>
+          <h2 data-aos="fade-up" class="fw-bold" style="color: #023020">
+            Say Hello!
+          </h2>
         </div>
-        <div class="box w-100">
-          <form action="" class="form">
-            <div class="row m-0">
-              <div class="col-lg-6 pe-2">
-                <div class="form-div">
-                  <input
-                    type="text"
-                    name=""
-                    id="fname"
-                    class="form__input"
-                    autocomplete="off"
-                    placeholder=" "
-                  />
-                  <label for="email" class="form__label">First Name</label>
-                </div>
-              </div>
-              <div class="col-lg-6 ps-2">
-                <div class="form-div">
-                  <input
-                    type="text"
-                    name=""
-                    id="lname"
-                    class="form__input"
-                    autocomplete="off"
-                    placeholder=" "
-                  />
-                  <label for="email" class="form__label">Last Name</label>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12 px-2">
-              <div class="form-div">
-                <input
-                  type="email"
-                  name=""
-                  id="email"
-                  class="form__input"
-                  autocomplete="off"
-                  placeholder=" "
-                />
-                <label for="message" class="form__label">Message</label>
-              </div>
-            </div>
-
-            <button class="btn btn-outline-success btn-lg rounded-0">
-              Send Message! <i class="fas fa-location-arrow"></i>
-            </button>
-          </form>
-        </div>
+        <div class="box w-100"></div>
       </div>
     </div>
   </div>
@@ -142,12 +113,19 @@
 
 <style lang="scss" scoped>
 #contact-heros {
-  display: flex;
   align-items: center;
   height: 50vh;
   /* margin-top: 70px !important; */
   width: 100%;
   background: url("../assets/imgs/contact_design.png") no-repeat;
+
+  .contact-home {
+    height: 60vh;
+    display: grid;
+    align-items: center;
+    // margin-top: -50px;
+    justify-content: flex-start;
+  }
 
   h1 {
     font-size: 5rem;
@@ -165,17 +143,18 @@
 }
 
 #contact {
-}
-
-#contact {
   margin: 100px;
   .social-media {
     li {
       width: 45px;
       height: 40px;
-      border: 3px solid #ddd;
+      // border: 2px solid #ddd;
       border-radius: 8px;
       cursor: pointer;
+
+      a i {
+        transition: all 0.5s ease-in-out;
+      }
     }
     .github:hover {
       background-color: #000 !important;
@@ -203,7 +182,50 @@
       }
     }
     .instagram:hover {
-      background-color: rgb(248, 18, 114) !important;
+      .instagram {
+        background: radial-gradient(
+            circle farthest-corner at 35% 90%,
+            #fec564,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle farthest-corner at 0 140%,
+            #fec564,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 0 -25%,
+            #5258cf,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 20% -50%,
+            #5258cf,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 100% 0,
+            #893dc2,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 60% -20%,
+            #893dc2,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse farthest-corner at 100% 100%,
+            #d9317a,
+            transparent
+          ),
+          linear-gradient(
+            #6559ca,
+            #bc318f 30%,
+            #e33f5f 50%,
+            #f77638 70%,
+            #fec66d 100%
+          );
+      }
       a {
         color: #fff !important;
       }
@@ -220,58 +242,6 @@
     margin: auto;
     border-radius: 0.5rem;
   }
-  .form {
-    width: 100%;
-    position: relative;
-  }
-  .form-div {
-    position: relative;
-    margin-bottom: 2rem;
-    height: 48px;
-  }
-
-  .form__input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* height: 100%; */
-    border: 2px solid #8c8984;
-    font-family: inherit;
-    font-size: inherit;
-    color: #000;
-    outline: none;
-    background: none;
-    padding: 0.6rem 1.25rem;
-    border-radius: 0.5rem;
-
-    &__:hover {
-      border-color: #0f0;
-    }
-    &__:focus {
-      border-color: #8c8984;
-    }
-    &__:active {
-      background: none;
-    }
-
-    &__:focus ~ .form__label,
-    &__:not(:placeholder-shown).form__input:not(:focus) {
-      top: -0.5rem;
-      font-size: 0.8rem;
-      left: 0.8rem;
-    }
-  }
-  .form__label {
-    position: absolute;
-    left: 1rem;
-    top: 0.8rem;
-    padding: 0 0.5rem;
-    color: #000;
-    cursor: text;
-    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-    background: #fff;
-  }
 }
 @media (min-width: 250px) and (max-width: 450px) {
   #contact-heros {
@@ -279,17 +249,51 @@
     height: 60%;
     background: url("../assets/imgs/contact-design-mobile.png") no-repeat center;
     background-size: contain;
+    .contact-home {
+      // height: 60vh;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      // margin-top: -50px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  #contact {
+    padding: 0 20px;
+    .snd-col {
+      margin-top: 100px;
+    }
+    .box {
+      padding: 20px 0;
+    }
   }
 }
 @media (min-width: 750px) and (max-width: 1180px) {
   #contact-heros {
     width: 100%;
-    // height: 60%;
+    // height: 100vh;
     justify-content: center;
-    background: url("../assets/imgs/contact-design-mobile.png") no-repeat center;
+    background: url("../assets/imgs/pad-cont-design.png") no-repeat center;
     background-size: contain;
+
+    .contact-home {
+      // height: 60vh;
+      display: grid;
+      align-items: center;
+      .px-5 {
+        margin-top: -140px;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
   }
   #contact {
+    margin-top: 80px !important;
     padding: 20px 70px;
 
     .col-lg-5 {

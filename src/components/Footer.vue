@@ -1,7 +1,11 @@
 <template>
   <div id="footer" class="bg-light px-4">
     <div class="row m-0 footer-top py-5 w-75 mx-auto">
-      <div class="col-lg-3 col-md-6" style="border-right: 3px dotted #ccc">
+      <div
+        data-aos="flip-left"
+        class="col-lg-3 col-md-6"
+        style="border-right: 3px dotted #ccc"
+      >
         <img
           src="../assets/imgs/hyLogo.png"
           style="width: 50px"
@@ -11,9 +15,9 @@
         <p>Passion for design.</p>
       </div>
       <div class="col-lg-3 col-md-6" style="border-right: 3px dotted #ccc">
-        <h5 class="fw-bold mb-4">Links</h5>
+        <h5 data-aos="flip-up" class="fw-bold mb-4">Links</h5>
         <ul class="links list-unstyled">
-          <li class="my-auto">
+          <li data-aos="fade-right" class="my-auto">
             <a
               href="femi.html"
               class="text-decoration-none text-dark text-dark text-dark"
@@ -21,7 +25,7 @@
               Home</a
             >
           </li>
-          <li class="my-auto">
+          <li data-aos="fade-left" class="my-auto">
             <a
               href="/about.html"
               class="text-decoration-none text-dark text-dark text-dark"
@@ -29,7 +33,7 @@
               About</a
             >
           </li>
-          <li class="my-auto">
+          <li data-aos="fade-right" class="my-auto">
             <a
               href=""
               class="text-decoration-none text-dark text-dark text-dark"
@@ -37,7 +41,7 @@
               Project</a
             >
           </li>
-          <li class="my-auto">
+          <li data-aos="fade-left" class="my-auto">
             <a
               href="/contact.html"
               class="text-decoration-none text-dark text-dark text-dark"
@@ -48,24 +52,29 @@
         </ul>
       </div>
       <div class="col-lg-3 col-md-6" style="border-right: 3px dotted #ccc">
-        <h5 class="fw-bold mb-4">Contact info</h5>
-        <div class="d-flex">
-          <i class="fas fa-map-pin fa-1x mt-2"></i>
+        <h5 data-aos="fade-up" class="fw-bold mb-4">Contact info</h5>
+        <div data-aos="fade-right" class="d-flex">
+          <!-- <i class="fas fa-map-pin fa-1x mt-2"></i> -->
+          <span class="material-symbols-outlined"> home_pin </span>
+
           <p class="ms-3">Yaba Colledge of Technology, Lagos Nigeria.</p>
         </div>
-        <div class="d-flex">
+        <div data-aos="fade-left" class="d-flex">
           <i class="fas fa-phone fa-1x"></i>
           <p class="ms-3">+234 9016290149</p>
         </div>
-        <div class="d-flex">
-          <i class="fas fa-mail-bulk fa-1x"></i>
+        <div data-aos="fade-right" class="d-flex">
+          <!-- <i class="fas fa-mail-bulk fa-1x"></i> -->
+          <span class="material-symbols-outlined"> mail </span>
+
           <p class="ms-3">femmyblaq@gmail.com</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 socials">
-        <h5 class="fw-bold mb-4">Social media</h5>
+        <h5 data-aos="flip-up" class="fw-bold mb-4">Social media</h5>
         <ul class="list-unstyled d-flex">
           <li
+            data-aos="flip-right"
             class="d-flex justify-content-center shadow align-items-center github"
           >
             <a href="" class="text-white"
@@ -73,6 +82,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center linked-in"
           >
             <a href="" class="text-white"
@@ -80,6 +90,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center instagram"
           >
             <a href="" class="text-white"
@@ -89,6 +100,7 @@
         </ul>
         <ul class="list-unstyled d-flex">
           <li
+            data-aos="flip-right"
             class="d-flex justify-content-center shadow align-items-center facebook"
           >
             <a href="" class="text-white"
@@ -96,6 +108,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center twitter"
           >
             <a href="" class="text-white"
@@ -103,6 +116,7 @@
             ></a>
           </li>
           <li
+            data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center whatsapp"
           >
             <a href="" class="text-white"
@@ -115,9 +129,9 @@
         </ul>
       </div>
     </div>
-    <div class="row footer-bottom">
+    <div data-aos="fade-right" class="row footer-bottom">
       <div class="col-lg-12 m-auto text-center">
-        <p class="mb-0">&copy; 2022 All right reserved by Femmy HY</p>
+        <p class="">&copy; 2022 All right reserved by Femmy HY</p>
       </div>
     </div>
   </div>
@@ -135,6 +149,9 @@
     height: 40px;
     // border: 1px solid #023020;
     border-radius: 8px;
+    i {
+      font-weight: 600;
+    }
   }
   .github {
     background-color: #000;
@@ -144,15 +161,66 @@
     background-color: rgb(60, 148, 243);
   }
   .whatsapp {
-    background-color: #25d366;
-    // background: linear-gradient(, #25d366) 14% 84%/16% 16% no-repeat,
-    //   radial-gradient(#25d366 60%, transparent 0);
+    background-color: #03b56b;
   }
   .facebook {
     background-color: rgb(4, 102, 207);
   }
   .instagram {
-    background-color: rgb(248, 18, 114);
+    background: radial-gradient(
+        circle farthest-corner at 35% 90%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle farthest-corner at 0 140%,
+        #fec564,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 0 -25%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 20% -50%,
+        #5258cf,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 0,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 60% -20%,
+        #893dc2,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at 100% 100%,
+        #d9317a,
+        transparent
+      ),
+      linear-gradient(
+        #6559ca,
+        #bc318f 30%,
+        #e33f5f 50%,
+        #f77638 70%,
+        #fec66d 100%
+      );
+  }
+}
+@media (min-width: 250px) and (max-width: 440px) {
+  #footer {
+    padding: 10px !important;
+
+    .col-lg-3 {
+      margin: 30px 0;
+      img {
+        margin-left: 0 !important;
+      }
+    }
   }
 }
 </style>

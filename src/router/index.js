@@ -1,11 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: () => import("../views/Home.vue"),
     meta: {
       title: "Home",
     },
@@ -28,6 +27,14 @@ const routes = [
     component: () => import("../views/Contact.vue"),
     meta: {
       title: "Contact",
+    },
+  },
+  {
+    path: "/project",
+    name: "Project",
+    component: () => import("../views/ProjectDone.vue"),
+    meta: {
+      title: "Project",
     },
   },
 ];

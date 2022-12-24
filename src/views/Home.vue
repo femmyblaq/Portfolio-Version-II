@@ -48,19 +48,29 @@
       <div class="row mx-0 p-0 position-absolute top-50">
         <div class="col-lg-6 col-md-6 col-sm-12" style="margin-left: 150px">
           <div class="intro my-auto">
-            <div class="w-25 text-white">
+            <div
+              class="w-25 text-white"
+              data-aos="flip-down"
+              data-aos-duration="2000"
+            >
               <p class="hi bg-dark p-1 m-0 text-center fw-bold">
                 Hi, my name is
               </p>
             </div>
-            <h1 class="fw-bolder">Femmy HY.</h1>
-            <h2 class="fw-bolder">
+            <h1
+              class="fw-bolder"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              Femmy HY.
+            </h1>
+            <h2
+              class="fw-bolder"
+              data-aos="fade-up-right"
+              data-aos-duration="2000"
+            >
               I create and build designs for
-              <span
-                class="txt-type"
-                data-wait="3000"
-                data-words='[" Web.", " UI/UX.", " Mobile."]'
-              ></span>
+              {{ words[0] }}
             </h2>
             <p class="my-3 pb-4 brief">
               I'm a frontend developer/engineer, I design for web and everything
@@ -71,32 +81,36 @@
             <a href=""><span>Get In Touch</span><i></i></a>
           </div>
         </div>
-        <div class="col-lg-3 ms-auto sm d-none d-lg-block">
+        <div
+          data-aos-duration="2000"
+          data-aos="fade-left"
+          class="col-lg-3 ms-auto sm d-none d-lg-block"
+        >
           <img src="../assets/imgs/FemmyCartooned.png" class="w-100" alt="" />
         </div>
       </div>
-      <div class="nav">
-        <ul class="nav-items list-unstyled">
-          <li class="nav-item active">
-            <a href="#heros" class="nav-link text-decoration-none"></a>
+      <div class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#heros" class="nav-link"></a>
           </li>
           <li class="nav-item">
-            <a href="#About" class="nav-link text-decoration-none"></a>
+            <a href="#About" class="nav-link"></a>
           </li>
           <li class="nav-item">
-            <a href="#Skills" class="nav-link text-decoration-none"></a>
+            <a href="#Skills" class="nav-link"></a>
           </li>
           <li class="nav-item">
-            <a href="#other-projects" class="nav-link text-decoration-none"></a>
+            <a href="#other-projects" class="nav-link"></a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link text-decoration-none"></a>
+            <a href="#contact" class="nav-link"></a>
           </li>
         </ul>
-        <div></div>
+        <div class="div"></div>
       </div>
     </div>
-    <div id="About" class="vh-75">
+    <div id="About" data-aos="fade-up" class="vh-75 pt-5">
       <div class="row m-0">
         <div class="col-lg-7 mx-auto">
           <div class="about-top d-inline-flex mb-3">
@@ -189,7 +203,7 @@
     </div>
     <div id="Skills" class="py-5">
       <div class="row m-0 p-0 w-75 mx-auto">
-        <div class="col-lg-6">
+        <div data-aos="flip-left" class="col-lg-6">
           <h1>Designs</h1>
           <span
             style="color: #0f0; font-family: 'Roboto Mono'; font-size: 0.8rem"
@@ -206,22 +220,22 @@
         </div>
         <div class="col-lg-6 mid mt-auto text-end">
           <ul class="list-unstyled d-inline-flex">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li data-aos="fade-right"></li>
+            <li data-aos="fade-up"></li>
+            <li data-aos="fade-up"></li>
+            <li data-aos="fade-left"></li>
           </ul>
         </div>
 
         <div class="col-lg-6 mid">
           <ul class="list-unstyled d-inline-flex">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li data-aos="fade-right"></li>
+            <li data-aos="fade-up"></li>
+            <li data-aos="fade-up"></li>
+            <li data-aos="fade-left"></li>
           </ul>
         </div>
-        <div class="col-lg-6 mt-auto text-end">
+        <div data-aos="flip-right" class="col-lg-6 mt-auto text-end">
           <h1>Engineering</h1>
           <span
             style="color: #0f0; font-family: 'Roboto Mono'; font-size: 0.8rem"
@@ -233,10 +247,11 @@
             <span style="color: #0f0">Firebase</span> has been so helpful in my
             development career, it allows me create some dynamic applicaions
             with zero hassle. Another is
-            <span style="color: #0f0">Mail Chimp</span>.
+            <span style="color: #0f0">Mail Chimp</span>. that helps me manage
+            and talk to my clients, customers and other interesting parties.
           </p>
         </div>
-        <div class="col-lg-6">
+        <div data-aos="flip-up" class="col-lg-6">
           <h1>Responsiveness</h1>
           <span
             style="color: #0f0; font-family: 'Roboto Mono'; font-size: 0.8rem"
@@ -246,18 +261,18 @@
             Responsive Web design is the approach that suggests that design and
             development should respond to the user’s behavior and environment
             based on screen size,
-            <span style="color: #0f0">platform and orientation. </span> I was In
-            other words, the website should have the technology to automatically
+            <span style="color: #0f0">platform and orientation. </span> In other
+            words, the website should have the technology to automatically
             respond to the user’s preferences. I'm able to focus my attention on
             responsive designs.
           </p>
         </div>
         <div class="col-lg-6 mid mt-auto text-end">
           <ul class="list-unstyled d-inline-flex">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li data-aos="fade-right"></li>
+            <li data-aos="fade-up"></li>
+            <li data-aos="fade-up"></li>
+            <li data-aos="fade-left"></li>
           </ul>
         </div>
       </div>
@@ -266,9 +281,9 @@
     <Projects />
 
     <div id="contact" class="w-75 mx-auto py-5">
-      <div class="top-content text-center">
+      <div data-aos="fade-up" class="top-content text-center">
         <p
-          style="color: #023020; font-family: 'Roboto Mono'; font-size: 1rem"
+          style="color: #0f0; font-family: 'Roboto Mono'; font-size: 1rem"
           class="m-0"
         >
           <span>04. </span>What's Next?
@@ -283,54 +298,8 @@
           possible. Thank you.
         </p>
       </div>
-      <div class="box">
-        <form action="" class="form">
-          <div class="row m-0">
-            <div class="col-lg-6 pe-2">
-              <div class="form-div">
-                <input
-                  type="text"
-                  name=""
-                  id="fname"
-                  class="form__input"
-                  autocomplete="off"
-                  placeholder=" "
-                />
-                <label for="email" class="form__label">First Name</label>
-              </div>
-            </div>
-            <div class="col-lg-6 ps-2">
-              <div class="form-div">
-                <input
-                  type="text"
-                  name=""
-                  id="lname"
-                  class="form__input"
-                  autocomplete="off"
-                  placeholder=" "
-                />
-                <label for="email" class="form__label">Last Name</label>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 px-2">
-            <div class="form-div">
-              <input
-                type="email"
-                name=""
-                id="email"
-                class="form__input"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="message" class="form__label">Message</label>
-            </div>
-          </div>
-
-          <button class="btn btn-outline-success btn-lg px-4 py-3 rounded-0">
-            Send Message! <i class="fas fa-location-arrow"></i>
-          </button>
-        </form>
+      <div data-aos="flip-left" class="box">
+        <DynamicForm />
       </div>
     </div>
     <!-- <Footer /> -->
@@ -340,13 +309,30 @@
 <script>
 import Project from "../components/Project.vue";
 import Projects from "../components/Projects.vue";
+import DynamicForm from "../components/DynamicForm.vue";
 // @ is an alias to /src
 // import Header from "@/components/Header.vue";
 // import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
-  components: { Project, Projects },
+  data() {
+    return {
+      words: ["Student", "Developer", "Programmer"],
+    };
+  },
+  components: { Project, Projects, DynamicForm },
+  mounted() {
+    window.setInterval(() => {
+      this.pollPerson();
+    }, 5000);
+  },
+  methods: {
+    pollPerson() {
+      const first = this.whois.shift();
+      this.whois = this.whois.concat(first);
+    },
+  },
 };
 </script>
 
@@ -354,6 +340,7 @@ export default {
 #heros {
   height: 90.6vh;
   width: 100%;
+  // position: relative;
   box-shadow: 20px, 20px, 50px rgba(0, 0, 0, 0.5);
   /* background: rgba(255, 255, 255, 0.1); */
   /* border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -364,7 +351,7 @@ export default {
   z-index: 10;
   background: url("../assets/imgs/portfolio-v2-design.png") no-repeat center;
   .socials ul {
-    div a:hover {
+    div li:hover a {
       color: #0f0 !important;
     }
     li {
@@ -372,11 +359,6 @@ export default {
       /* color: #0f0 !important; */
       transition: 200ms ease;
       cursor: pointer;
-      &__:hover a {
-        /* margin-bottom: 4px; */
-        color: #0f0 !important;
-        transform: translateY(-5px);
-      }
 
       a {
         transition: 0.5s;
@@ -385,6 +367,12 @@ export default {
         /* display: none; */
       }
     }
+    li:hover {
+      transform: translateY(-5px) !important;
+    }
+    // a {
+    //   color: #0f0 !important;
+    // }
   }
   .row {
     transform: translateY(-50%);
@@ -403,12 +391,13 @@ export default {
     .intro {
       a {
         color: #000;
-        position: relative;
+        // position: relative;
         background-color: #444;
         text-decoration: none;
         padding: 18px 30px;
         font-weight: 400;
         letter-spacing: 0.1em;
+        z-index: -1;
         margin-top: 50px;
         background: rgba(255, 255, 255, 0.7);
         transition: 0.5s;
@@ -426,7 +415,7 @@ export default {
         }
 
         span {
-          position: relative;
+          // position: relative;
           z-index: 1;
         }
 
@@ -437,7 +426,7 @@ export default {
 
           &__::before {
             content: "";
-            position: absolute;
+            // position: absolute;
             width: 10px;
             top: -1px;
             left: 98%;
@@ -488,56 +477,55 @@ export default {
 .txt-type > .txt {
   border-right: 0.2rem solid #000;
 }
-.nav {
+.navbar {
   width: 10px;
   position: fixed;
-  bottom: 120px;
+  // bottom: 120px;
   display: flex;
   flex-direction: column;
   left: auto;
   right: 40px;
   height: 500px;
   /* transform: translateY(-50%); */
-  /* top: 50%; */
+  top: 80%;
 }
-
-.nav ul {
-  margin-top: -130px;
+.navbar ul {
+  margin-top: -150px;
   margin-left: -15px;
 }
-
-.nav-items li a {
+.nav-item a {
   width: 10px;
   height: 10px;
-  border: 2px solid #000;
+  border: 2px solid #000 !important;
   transform: rotate(45deg);
   padding: 0 !important;
-  margin: 10px;
+  margin: 7px;
 }
-.nav-items li.active a {
-  background-color: #0f0;
+.nav-item a:active {
+  background-color: #0f0 !important;
   transform: rotate(0);
   // width: 15px;
   // height: 15px;
   // border: 1px solid #000;
 }
-.nav-items li a:hover {
+.nav-item a:hover {
   background-color: #000;
   /* border: 2px solid #ff0000; */
   /* box-shadow: 40px 10px #f00; */
 }
 
-.nav-items li a:is(:link, :active, :visited).active {
+.nav-item a:is(:link, :active, :visited).active {
   border: 2px solid #0f0;
   background-color: #000;
 }
 
-.nav:last-child {
+.div {
   width: 2px;
   background-color: #000;
-  height: 100px;
+  height: 140px;
   position: fixed;
   bottom: 0;
+  margin-right: 13px;
 }
 
 #About {
@@ -585,7 +573,7 @@ export default {
 
 #contact {
   .box {
-    height: auto;
+    height: 50vh;
     width: 60%;
     text-align: center;
     /* display: grid; */
@@ -648,19 +636,316 @@ export default {
     background: #fff;
   }
 }
+@media (min-width: 500px) and (max-width: 777px) {
+  #heros {
+    height: 80vh;
+    width: 100%;
+    z-index: 1;
+    background: url("../assets/imgs/Mobile-design-back.png") no-repeat center !important;
+  }
+
+  #heros .row {
+    width: 100% !important;
+    padding: 20px !important;
+    display: block !important;
+  }
+
+  #heros .row .col-lg-6 {
+    margin-left: 10px !important;
+  }
+
+  #heros .row .col-lg-6 .intro {
+    width: 100%;
+  }
+
+  #heros .row .col-lg-6 .intro .w-25 {
+    width: 30% !important;
+  }
+
+  #heros .row .col-lg-6 p {
+    width: 100%;
+  }
+
+  #heros .row .col-lg-6 h1 {
+    font-size: 3rem;
+  }
+
+  #heros .row .col-lg-6 h2 {
+    font-size: 1.7rem;
+    font-weight: 900 !important;
+  }
+
+  #heros .nav,
+  #heros .sm,
+  #heros .socials {
+    display: none !important;
+  }
+
+  #About {
+    width: 100vw;
+    margin: 0 auto !important;
+    padding: 70px 10px;
+  }
+
+  #About .about-top div {
+    width: 150px !important;
+    margin: auto 10px;
+  }
+
+  #About .sm img {
+    width: 300px !important;
+    margin-left: 50px;
+    display: block !important;
+  }
+
+  #Skills {
+    padding: 20px !important;
+    .row {
+      display: block !important;
+      width: 100% !important;
+      height: 100vh !important;
+      padding: 10px !important;
+    }
+  }
+
+  #Skills .col-lg-6 {
+    /* height: 50vh; */
+    width: 100% !important;
+  }
+
+  #other-projects {
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  #contact {
+    width: 100% !important;
+  }
+
+  #contact p {
+    padding: 0 20px !important;
+  }
+
+  #contact .w-75 {
+    width: 90% !important;
+  }
+
+  .box {
+    width: 100% !important;
+    margin: 20px 0;
+  }
+
+  #footer .footer-top {
+    width: 100% !important;
+    margin: 30px 15px;
+  }
+
+  #footer .footer-top .col-lg-3 {
+    margin-top: 30px;
+    border-right: none !important;
+    border-bottom: 4px dotted #444;
+  }
+  #About {
+    margin: 150px 0 30px !important;
+  }
+  #Skills .row {
+    height: 100% !important;
+    .col-lg-6 {
+      margin: 50px 0;
+    }
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1180px) {
-  #Skills .row .mid {
-    height: 100px !important;
+  #heros {
+    height: 60vh;
+    overflow: visible;
+    background: none;
+    border-bottom: 1px solid #444;
+    // .socials {
+    //   display: block !important;
+    // }
+    .navbar {
+      right: 58px;
+      ul {
+        margin-top: -78px;
+        margin-left: -20px;
+      }
+
+      .div {
+        height: 160px;
+      }
+    }
+
+    .row {
+      width: 100% !important;
+      .col-lg-6 {
+        margin-left: 90px !important;
+        width: 70% !important;
+        h2,
+        p {
+          width: 100% !important;
+        }
+      }
+      .col-lg-3 {
+        img {
+          display: none !important;
+        }
+      }
+    }
+  }
+  #About {
+    width: 75%;
+    margin: 100px auto !important;
+    padding: 100px 20px;
+    .about-top div {
+      width: 300px;
+      margin: auto 20px;
+    }
+    .sm img {
+      width: 300px !important;
+      margin-left: 100px;
+    }
+  }
+  #Skills {
+    height: 100%;
+    padding-bottom: 100px;
+    .row .mid {
+      height: 100px !important;
+    }
   }
   #contact .box {
     width: 90%;
   }
 }
 
-@media (min-width: 414px) and (max-width: 450px) {
+@media (min-width: 414px) and (max-width: 499px) {
+  #heros {
+    height: 90vh;
+    width: 100%;
+    z-index: 1;
+    background: url("../assets/imgs/Mobile-design-back.png") no-repeat center
+      cover !important;
+  }
+
   #Skills .row {
     height: 100% !important;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 410px) {
+  #heros {
+    /* height: 90%; */
+    width: 100%;
+    z-index: 1;
+    background: url("../assets/imgs/Mobile-design-back.png") no-repeat cover !important;
+  }
+
+  #heros .row {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  #heros .row .col-lg-6 {
+    margin-left: 10px !important;
+  }
+
+  #heros .row .col-lg-6 .intro {
+    width: 100%;
+  }
+
+  #heros .row .col-lg-6 .intro .w-25 {
+    width: 30% !important;
+  }
+
+  #heros .row .col-lg-6 p {
+    width: 100%;
+  }
+
+  #heros .row .col-lg-6 h1 {
+    font-size: 3rem;
+  }
+
+  #heros .row .col-lg-6 h2 {
+    font-size: 1.7rem;
+    font-weight: 900 !important;
+  }
+
+  #heros .navbar,
+  #heros .sm,
+  #heros .socials {
+    display: none !important;
+  }
+
+  #About {
+    width: 100vw;
+    margin: 0 auto !important;
+    padding: 70px 10px;
+  }
+
+  #About .about-top div {
+    width: 150px !important;
+    margin: auto 10px;
+  }
+
+  #About .sm img {
+    width: 300px !important;
+    margin-left: 50px;
+    display: block !important;
+  }
+
+  #Skills .row {
+    display: block !important;
+    width: 100% !important;
+    height: 100vh !important;
+    padding: 10px !important;
+  }
+
+  #Skills .col-lg-6 {
+    /* height: 50vh; */
+    width: 100% !important;
+  }
+
+  #other-projects {
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  #contact {
+    width: 100% !important;
+  }
+
+  #contact p {
+    padding: 0 20px !important;
+  }
+
+  #contact .w-75 {
+    width: 90% !important;
+  }
+
+  .box {
+    width: 100% !important;
+    margin: 20px 0;
+  }
+
+  #footer .footer-top {
+    width: 100% !important;
+    margin: 30px 15px;
+  }
+
+  #footer .footer-top .col-lg-3 {
+    margin-top: 30px;
+    border-right: none !important;
+    border-bottom: 4px dotted #444;
+  }
+  #About {
+    margin: 150px 0 30px !important;
+  }
+  #Skills .row {
+    height: 100% !important;
+    .col-lg-6 {
+      margin: 50px 0;
+    }
   }
 }
 </style>
