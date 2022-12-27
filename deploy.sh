@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:femmyblaq/portfolio_v2.git main:gh-pages
+git push -f git@github.com:femmyblaq/Portfolio-Version-II main:gh-pages
 cd -
