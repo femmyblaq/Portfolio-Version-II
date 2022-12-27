@@ -24,7 +24,7 @@
             active-class="active"
             ><a class="nav-link text-dark text-decoration-none fs-6 py-2">
               <span style="color: #0f0">01. </span>Home
-              <span class="d-none span-sm" style="color: #0f0"> .01</span></a
+              </a
             >
           </router-link>
           <router-link
@@ -255,9 +255,6 @@ export default {
 @media (min-width: 250px) and (max-width: 450px) {
   .lg-links {
     display: none !important;
-    .span-sm {
-      display: block !important;
-    }
   }
   .links {
     display: flex !important;

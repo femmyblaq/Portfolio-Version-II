@@ -1,6 +1,11 @@
 <template>
   <div>
-    <div id="rocket-container" v-if="!loads" class="preloader" ref="rocketC">
+    <div
+      id="rocket-container"
+      v-show="loads"
+      :class="{ preloader: loads }"
+      ref="rocketC"
+    >
       <img
         src="../src/assets/imgs/icons8-rocket-64.png"
         alt="rocket"
@@ -28,26 +33,24 @@ import SecondVue from "./components/SecondHome.vue";
 export default {
   data() {
     return {
-      loads: false,
+      loads: true,
       xPos: 0,
       yPos: 0,
       speed: 2,
     };
   },
   mounted() {
-    window.addEventListener("load", () => {
-      this.loads = true;
-      // Set an interval to update the position of the rocket
-      // setInterval(() => {
-      // Update the x and y position of the rocket
-      // this.xPos += this.speed;
-      // this.yPos += this.speed;
-      // Move the rocket to the new position
-      // this.$refs.rocket.style.left = this.xPos + "px";
-      // this.$refs.rocket.style.top = this.yPos + "px";
-      // }, 200);
-      // this.$refs.rocketC.style.classList("rokky");
+    // Start loading your content
+    this.loadContent().then(() => {
+      // When the content is finished loading, set loading to false
+      this.loads = false;
     });
+  },
+  methods: {
+    async loadContent() {
+      // Load your content here
+      this.loads = true;
+    },
   },
   components: {
     FooterVue,
@@ -81,7 +84,8 @@ export default {
 }
 .preloader {
   /* Preloader styles here */
-  transition: opacity 0.3s linear;
+  display: none;
+  transition: display 0.8s linear;
 }
 
 #rocket {

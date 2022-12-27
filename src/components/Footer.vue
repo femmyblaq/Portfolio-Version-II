@@ -111,7 +111,7 @@
             data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center twitter"
           >
-            <a href="" class="text-white"
+            <a href="https://twitter.com/FemmyHy" class="text-white"
               ><i class="fab fa-1x fa-twitter"></i
             ></a>
           </li>
