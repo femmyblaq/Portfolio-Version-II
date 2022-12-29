@@ -78,7 +78,9 @@
               with great user experiences and effectiveness.
             </p>
 
-            <a href=""><span>Get In Touch</span><i></i></a>
+            <router-link to="/contact"
+              ><span>Get In Touch</span><i></i
+            ></router-link>
           </div>
         </div>
         <div
@@ -281,6 +283,7 @@
     <Projects />
 
     <div id="contact" class="w-75 mx-auto py-5">
+      <MessagePopoverVue />
       <div data-aos="fade-up" class="top-content text-center">
         <p
           style="color: #0f0; font-family: 'Roboto Mono'; font-size: 1rem"
@@ -310,6 +313,8 @@
 import Project from "../components/Project.vue";
 import Projects from "../components/Projects.vue";
 import DynamicForm from "../components/DynamicForm.vue";
+import { mapState } from "vuex";
+import MessagePopoverVue from "../components/MessagePopover.vue";
 // @ is an alias to /src
 // import Header from "@/components/Header.vue";
 // import Footer from "@/components/Footer.vue";
@@ -318,21 +323,19 @@ export default {
   name: "Home",
   data() {
     return {
-      words: ["Student", "Developer", "Programmer"],
+      words: ["Web", "Developer", "Programmer"],
     };
   },
-  components: { Project, Projects, DynamicForm },
+  components: { Project, MessagePopoverVue, Projects, DynamicForm },
   mounted() {
     window.setInterval(() => {
       this.pollPerson();
     }, 5000);
   },
-  methods: {
-    pollPerson() {
-      const first = this.whois.shift();
-      this.whois = this.whois.concat(first);
-    },
+  computed: {
+    ...mapState(["showMessageModal"]),
   },
+  methods: {},
 };
 </script>
 

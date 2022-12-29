@@ -1,34 +1,17 @@
 <template>
-  <div>
-    <div
-      id="rocket-container"
-      v-show="loads"
-      :class="{ preloader: loads }"
-      ref="rocketC"
-    >
-      <img
-        src="../src/assets/imgs/icons8-rocket-64.png"
-        alt="rocket"
-        ref="rocket"
-        id="rocket"
-      />
-      <img src="../src/assets/imgs/icons8-cloud-96.png" class="cloudI" alt="" />
-      <img src="../src/assets/imgs/icons8-cloud-96.png" class="cloud2" alt="" />
-      <img src="../src/assets/imgs/icons8-cloud-96.png" class="cloud3" alt="" />
-    </div>
-
-    <div id="app">
-      <SecondVue />
-      <!-- <HeaderVue /> -->
-      <router-view />
-      <FooterVue />
-    </div>
+  <div id="app">
+    <!-- <PreloaderVue v-if="loads" :class="{ rokky: !loads }" /> -->
+    <SecondVue />
+    <!-- <HeaderVue /> -->
+    <router-view />
+    <FooterVue />
   </div>
 </template>
 <script>
 // import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
 import SecondVue from "./components/SecondHome.vue";
+// import PreloaderVue from "./components/Preloader.vue";
 
 export default {
   data() {
@@ -40,21 +23,15 @@ export default {
     };
   },
   mounted() {
-    // Start loading your content
-    this.loadContent().then(() => {
-      // When the content is finished loading, set loading to false
+    window.addEventListener("load", () => {
       this.loads = false;
     });
   },
-  methods: {
-    async loadContent() {
-      // Load your content here
-      this.loads = true;
-    },
-  },
+  methods: {},
   components: {
     FooterVue,
     // HeaderVue,
+    // PreloaderVue,
     SecondVue,
   },
 };
@@ -64,77 +41,14 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: 0.5s ease all;
+  transition: 300ms ease all;
 }
 .rokky {
-  display: none;
-}
-#rocket-container {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-  height: 100vh;
-  background: #ccc;
-  z-index: 11111111;
-  display: flex;
-  transition: 0.5s ease all;
-  // place-items: center;
-  justify-content: center;
-  align-items: center;
-}
-.preloader {
-  /* Preloader styles here */
-  display: none;
-  transition: display 0.8s linear;
-}
-
-#rocket {
-  position: absolute;
-  width: 100px;
-  z-index: 1;
-  // left: 50%;
-  // top: 50%;
-  bottom: 10px;
-  animation: rocket 0.01s ease infinite alternate;
-  // transform: translate(-50%, -50%);
-}
-.cloudI,
-.cloud2,
-.cloud3 {
-  position: absolute;
-  z-index: -1;
-  top: 100%;
-}
-.cloudI {
-  right: 45%;
-  animation: clouds 1.5s linear infinite 1s;
-}
-.cloud2 {
-  left: 50%;
-  animation: clouds 1.5s linear infinite 1s;
-}
-.cloud3 {
-  animation: clouds 1.5s linear infinite;
-}
-
-@keyframes clouds {
-  from {
-    top: -100%;
-  }
-  to {
-    top: 100%;
-  }
-}
-@keyframes rocket {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(4px);
-  }
+  display: none !important;
 }
 
 #app {
+  overflow: hidden !important;
   // position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,5 +1,7 @@
 <template>
   <div>
+    <MessagePopoverVue />
+
     <div id="contact-heros">
       <div class="contact-home">
         <!-- <img class="position-absolute h-50 w-100" src="imgs/TechnologyDesign.png" alt=""> -->
@@ -105,11 +107,30 @@
             Say Hello!
           </h2>
         </div>
-        <div class="box w-100"></div>
+        <div class="box w-100">
+          <DynamicFormVue />
+        </div>
       </div>
     </div>
   </div>
 </template>
+<script>
+import DynamicFormVue from "../components/DynamicForm.vue";
+import MessagePopoverVue from "../components/MessagePopover.vue";
+// import { mapMutations } from "vuex";
+export default {
+  components: {
+    MessagePopoverVue,
+    DynamicFormVue,
+  },
+  methods: {},
+  computed: {
+    modalMessage() {
+      return this.$store.getters.getState;
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 #contact-heros {
@@ -283,6 +304,7 @@
       // height: 60vh;
       display: grid;
       align-items: center;
+      justify-content: center;
       .px-5 {
         margin-top: -140px;
       }
@@ -302,7 +324,7 @@
   }
 }
 
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 500px) and (max-width: 749px) {
   #contact-heros {
     width: 100%;
     // height: 60%;

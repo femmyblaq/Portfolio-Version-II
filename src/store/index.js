@@ -1,12 +1,20 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
   state: {
+    showMessageModal: false,
   },
   mutations: {
+    MODAL(state) {
+      state.showMessageModal = !state.showMessageModal;
+      console.log("I got clicked");
+    },
   },
-  actions: {
+  actions: {},
+  getters: {
+    getState(state) {
+      return state.showMessageModal;
+    },
   },
-  modules: {
-  }
-})
+  modules: {},
+});

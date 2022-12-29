@@ -71,7 +71,11 @@
         </div>
       </div>
     </div>
-    <button type="submit" class="btn btn-outline-success btn-lg rounded-0">
+    <button
+      @click="messageModal"
+      type="submit"
+      class="btn btn-outline-success btn-lg rounded-0"
+    >
       Send Message! <i class="fas fa-location-arrow"></i>
     </button>
   </Form>
@@ -81,6 +85,7 @@ import { Form, Field } from "vee-validate";
 import * as yup from "yup";
 import firebase from "firebase/app";
 import "firebase/database";
+import { mapMutations } from "vuex";
 export default {
   name: "DynamicForm",
   data() {
@@ -103,7 +108,12 @@ export default {
     firebase.initializeApp(this.firebaseConfig);
   },
   methods: {
+    ...mapMutations(["MODAL"]),
+    messageModal() {
+      this.MODAL();
+    },
     onSubmit() {
+      this.MODAL();
       const formData = {
         name: this.username,
         email: this.email,
@@ -168,7 +178,7 @@ form span {
 }
 .form-label {
   text-align: left;
-  font-family: "Roboto";
+  font-family: "Roboto Mono";
   display: flex;
 }
 @media (min-width: 260px) and (max-width: 567px) {
