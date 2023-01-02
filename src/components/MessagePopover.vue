@@ -1,5 +1,5 @@
 <template>
-  <div id="message-popover">
+  <div id="message-popover" @click="removeBg">
     <div class="message-box shadow-lg">
       <img src="../assets/imgs/icons8-broken-robot-100.png" alt="" />
       <h4>oops!</h4>
@@ -8,22 +8,29 @@
   </div>
 </template>
 <script>
-import { mapGetters } from "vuex";
+import { mapMutations } from "vuex";
 export default {
-  computed: {
-    ...mapGetters(["getState"]),
+  methods: {
+    ...mapMutations(["toggleModal"]),
+    removeBg() {
+      this.toggleModal();
+      console.log("RemoveBg got clicked");
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 #message-popover {
+  // background-color: aqua;
+  cursor: pointer;
   position: fixed;
   z-index: 1111;
   width: 100%;
   height: 100vh;
   display: flex;
   margin: auto;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   .message-box {
@@ -41,6 +48,7 @@ export default {
     border: 2px solid #000;
     p {
       font-size: 20px;
+      font-family: "Fira Sans";
     }
   }
 }

@@ -43,7 +43,7 @@
             <h6 class="card-text fw-bold" style="font-family: 'Ubuntu'">
               Professional website using html and css
             </h6>
-            <p>
+            <p style="font-family: 'Fira Sans'">
               Security Consultant helps analyze and assesses security Business,
               Education, Entreprenuership for better management and support in
               the society.
@@ -131,7 +131,7 @@
             <h6 class="card-text fw-bold" style="font-family: 'Ubuntu'">
               Professional website using html, css, vue js and api
             </h6>
-            <p>
+            <p style="font-family: 'Fira Sans'">
               E-wallet app is a dynamic web application where users can bank
               with there phone, an app where user can Fund thier account and
               Transfer.
@@ -215,7 +215,7 @@
             <h6 class="card-text fw-bold" style="font-family: 'Ubuntu'">
               Professional website using html, css and vue js
             </h6>
-            <p>
+            <p style="font-family: 'Fira Sans'">
               A Typing Kombat game composed of Dom manipulation, that generates
               random words depending on how fast the gamer is that's how the
               victory would be given.
@@ -301,7 +301,7 @@
             <h6 class="card-text fw-bold" style="font-family: 'Ubuntu'">
               Professional website using html, css and vue js
             </h6>
-            <p>
+            <p style="font-family: 'Fira Sans'">
               A Professional website that talks about my profession a some minor
               projects I have done.
             </p>
@@ -382,7 +382,7 @@
             <h6 class="card-text fw-bold" style="font-family: 'Ubuntu'">
               Professional website using html, css and vue js
             </h6>
-            <p>
+            <p style="font-family: 'Fira Sans'">
               Dynamic web Application where user can buy and sell, that is
               connected to firebase which allows the to save and load data.
             </p>

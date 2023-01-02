@@ -1,7 +1,5 @@
 <template>
   <div>
-    <MessagePopoverVue />
-
     <div id="contact-heros">
       <div class="contact-home">
         <!-- <img class="position-absolute h-50 w-100" src="imgs/TechnologyDesign.png" alt=""> -->
@@ -22,7 +20,7 @@
       <div class="col-lg-5">
         <div class="reach-outs">
           <img src="/imgs/hyLogo.png" class="w-5" alt="" />
-          <p class="my-3">
+          <p class="my-3" style="font-family: 'Fira Sans'">
             Well I'm looking for any opportunities that can offer me well and as
             well gain more experience as a software engineer, and I promise to
             give my possible best as always. My inbox is wildly open, whether
@@ -33,15 +31,19 @@
         </div>
         <div data-aos="flip-right" class="d-flex">
           <i class="fas fa-map-pin fa-1x"></i>
-          <p class="ms-3">Yaba Colledge of Technology, Lagos Nigeria.</p>
+          <p class="ms-3" style="font-family: 'Fira Sans'">
+            Yaba Colledge of Technology, Lagos Nigeria.
+          </p>
         </div>
         <div data-aos="flip-right" class="d-flex">
           <i class="fas fa-phone fa-1x"></i>
-          <p class="ms-3">+234 9016290149</p>
+          <p class="ms-3" style="font-family: 'Fira Sans'">+234 9016290149</p>
         </div>
         <div data-aos="flip-right" class="d-flex">
           <i class="fas fa-mail-bulk fa-1x"></i>
-          <p class="ms-3">femmyblaq@gmail.com / phemmyhy@gmail.com</p>
+          <p class="ms-3" style="font-family: 'Fira Sans'">
+            femmyblaq@gmail.com / phemmyhy@gmail.com
+          </p>
         </div>
         <ul class="social-media list-unstyled mb-0 d-flex">
           <li
@@ -116,19 +118,13 @@
 </template>
 <script>
 import DynamicFormVue from "../components/DynamicForm.vue";
-import MessagePopoverVue from "../components/MessagePopover.vue";
-// import { mapMutations } from "vuex";
+// import { mapGetters } from "vuex";
 export default {
   components: {
-    MessagePopoverVue,
     DynamicFormVue,
   },
   methods: {},
-  computed: {
-    modalMessage() {
-      return this.$store.getters.getState;
-    },
-  },
+  computed: {},
 };
 </script>
 

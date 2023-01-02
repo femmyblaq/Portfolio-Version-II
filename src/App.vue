@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <!-- <PreloaderVue v-if="loads" :class="{ rokky: !loads }" /> -->
+    <MessagePopoverVue v-show="showMessageModal" />
+
     <SecondVue />
     <!-- <HeaderVue /> -->
     <router-view />
@@ -8,10 +10,12 @@
   </div>
 </template>
 <script>
+import MessagePopoverVue from "./components/MessagePopover.vue";
 // import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
 import SecondVue from "./components/SecondHome.vue";
 // import PreloaderVue from "./components/Preloader.vue";
+import { mapState } from "vuex";
 
 export default {
   data() {
@@ -22,6 +26,12 @@ export default {
       speed: 2,
     };
   },
+  computed: {
+    ...mapState(["showMessageModal"]),
+    // modalMessage() {
+    //   return this.$store.state.showMessageModal;
+    // },
+  },
   mounted() {
     window.addEventListener("load", () => {
       this.loads = false;
@@ -30,6 +40,7 @@ export default {
   methods: {},
   components: {
     FooterVue,
+    MessagePopoverVue,
     // HeaderVue,
     // PreloaderVue,
     SecondVue,

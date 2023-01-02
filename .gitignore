@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-public/all.min.css
+# public/all.min.css
 public/all.min.js
 public/bootstrap.min.js
 public/bootstrap.min.css

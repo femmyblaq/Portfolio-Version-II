@@ -19,6 +19,7 @@
         <ul class="links list-unstyled">
           <li data-aos="fade-right" class="my-auto">
             <a
+              style="font-family: 'Fira Sans'"
               href="femi.html"
               class="text-decoration-none text-dark text-dark text-dark"
               ><i class="fas fa-angle-right mx-2" style="color: #0f0"></i>
@@ -27,6 +28,7 @@
           </li>
           <li data-aos="fade-left" class="my-auto">
             <a
+              style="font-family: 'Fira Sans'"
               href="/about.html"
               class="text-decoration-none text-dark text-dark text-dark"
               ><i class="fas fa-angle-right mx-2" style="color: #0f0"></i>
@@ -35,6 +37,7 @@
           </li>
           <li data-aos="fade-right" class="my-auto">
             <a
+              style="font-family: 'Fira Sans'"
               href=""
               class="text-decoration-none text-dark text-dark text-dark"
               ><i class="fas fa-angle-right mx-2" style="color: #0f0"></i>
@@ -43,6 +46,7 @@
           </li>
           <li data-aos="fade-left" class="my-auto">
             <a
+              style="font-family: 'Fira Sans'"
               href="/contact.html"
               class="text-decoration-none text-dark text-dark text-dark"
               ><i class="fas fa-angle-right mx-2" style="color: #0f0"></i>
@@ -57,17 +61,21 @@
           <!-- <i class="fas fa-map-pin fa-1x mt-2"></i> -->
           <span class="material-symbols-outlined"> home_pin </span>
 
-          <p class="ms-3">Yaba Colledge of Technology, Lagos Nigeria.</p>
+          <p class="ms-3" style="font-family: 'Fira Sans'">
+            Yaba Colledge of Technology, Lagos Nigeria.
+          </p>
         </div>
         <div data-aos="fade-left" class="d-flex">
           <i class="fas fa-phone fa-1x"></i>
-          <p class="ms-3">+234 9016290149</p>
+          <p class="ms-3" style="font-family: 'Fira Sans'">+234 9016290149</p>
         </div>
         <div data-aos="fade-right" class="d-flex">
           <!-- <i class="fas fa-mail-bulk fa-1x"></i> -->
           <span class="material-symbols-outlined"> mail </span>
 
-          <p class="ms-3">femmyblaq@gmail.com</p>
+          <p class="ms-3" style="font-family: 'Fira Sans'">
+            femmyblaq@gmail.com
+          </p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 socials">
@@ -131,7 +139,9 @@
     </div>
     <div data-aos="fade-right" class="row footer-bottom">
       <div class="col-lg-12 m-auto text-center">
-        <p class="">&copy; 2022 All right reserved by Femmy HY</p>
+        <p class="" style="font-family: 'Fira Sans'">
+          &copy; 2022 All right reserved by Femmy HY
+        </p>
       </div>
     </div>
   </div>

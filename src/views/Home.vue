@@ -64,11 +64,7 @@
             >
               Femmy HY.
             </h1>
-            <h2
-              class="fw-bolder"
-              data-aos="fade-up-right"
-              data-aos-duration="2000"
-            >
+            <h2 class="fw-bolder">
               I create and build designs for
               {{ words[0] }}
             </h2>
@@ -77,7 +73,6 @@
               between. I like to craft innovative and scalable frontend product
               with great user experiences and effectiveness.
             </p>
-
             <router-link to="/contact"
               ><span>Get In Touch</span><i></i
             ></router-link>
@@ -211,7 +206,7 @@
             style="color: #0f0; font-family: 'Roboto Mono'; font-size: 0.8rem"
             >Frontend Development.</span
           >
-          <p class="mt-2">
+          <p class="mt-2" style="font-family: 'Fira Sans'">
             I'm typically not the best designer in the world, but at least I am
             best of me, With the idea gotten from
             <span style="color: #0f0">Graphics design</span> I was able to apply
@@ -243,7 +238,7 @@
             style="color: #0f0; font-family: 'Roboto Mono'; font-size: 0.8rem"
             >Connecting to Backend</span
           >
-          <p class="mt-2">
+          <p class="mt-2" style="font-family: 'Fira Sans'">
             Well, with the help of some effective database tools, which allows
             me to be able to store data and as well retrieve them, e.g
             <span style="color: #0f0">Firebase</span> has been so helpful in my
@@ -259,7 +254,7 @@
             style="color: #0f0; font-family: 'Roboto Mono'; font-size: 0.8rem"
             >Media Query.</span
           >
-          <p class="mt-2">
+          <p class="mt-2" style="font-family: 'Fira Sans'">
             Responsive Web design is the approach that suggests that design and
             development should respond to the user’s behavior and environment
             based on screen size,
@@ -292,7 +287,7 @@
           <span>04. </span>What's Next?
         </p>
         <h2 class="fw-bold" style="color: #023020">Get In Touch</h2>
-        <p class="px-5 my-3">
+        <p class="px-5 my-3" style="font-family: 'Fira Sans'">
           Well I'm looking for any opportunities that can offer me well and as
           well gain more experience as a software engineer, and I promise to
           give my possible best as always. My inbox is wildly open, whether you
@@ -449,6 +444,7 @@ export default {
       }
       .hi {
         font-size: 0.8rem;
+        font-family: "Roboto Mono";
       }
       h1 {
         font-size: 4rem;
@@ -473,6 +469,9 @@ export default {
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+      }
+      .brief {
+        font-family: "Fira Sans", sans-serif;
       }
     }
   }
@@ -550,6 +549,9 @@ export default {
       background-color: #023020;
       margin: auto 20px;
     }
+  }
+  p {
+    font-family: "Fira Sans";
   }
   ul {
     font-size: 0.8rem;
@@ -831,8 +833,91 @@ export default {
       cover !important;
   }
 
+  #heros .row {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  #heros .row .col-lg-6 {
+    margin-left: 10px !important;
+  }
+
+  #heros .row .col-lg-6 .intro {
+    width: 100%;
+  }
+
+  #heros .row .col-lg-6 .intro .w-25 {
+    width: 30% !important;
+  }
+
+  #heros .row .col-lg-6 p {
+    width: 100%;
+  }
+
+  #heros .row .col-lg-6 h1 {
+    font-size: 3rem;
+  }
+
+  #heros .row .col-lg-6 h2 {
+    font-size: 1.7rem;
+    font-weight: 900 !important;
+  }
+
+  #heros .navbar,
+  #heros .sm,
+  #heros .socials {
+    display: none !important;
+  }
+
+  #About {
+    width: 100vw;
+    margin: 0 auto !important;
+    padding: 70px 10px;
+  }
+
+  #About .about-top div {
+    width: 150px !important;
+    margin: auto 10px;
+  }
+
+  #About .sm img {
+    width: 300px !important;
+    margin-left: 50px;
+    display: block !important;
+  }
+
   #Skills .row {
-    height: 100% !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100vh !important;
+    padding: 10px !important;
+  }
+
+  #Skills .col-lg-6 {
+    /* height: 50vh; */
+    width: 100% !important;
+  }
+
+  #other-projects {
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  #contact {
+    width: 100% !important;
+  }
+
+  #contact p {
+    padding: 0 20px !important;
+  }
+
+  #contact .w-75 {
+    width: 90% !important;
+  }
+
+  .box {
+    width: 100% !important;
+    margin: 20px 0;
   }
 }
 

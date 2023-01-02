@@ -16,7 +16,7 @@
           </p>
           <h3 class="text-start fw-bold" style="color: #023020">LibraryTUT</h3>
           <div class="">
-            <p style="" class="">
+            <p style="font-family: 'Fira Sans'" class="">
               LibraryTUT is a platform where students registers their details to
               gain access to
               <span style="color: #0f0; font-family: 'Roboto Mono'"
@@ -126,7 +126,7 @@
             Ewallet System
           </h3>
           <div class="">
-            <p style="" class="">
+            <p style="font-family: 'Fira Sans'" class="">
               E-wallet app is a dynamic web application where users can bank
               with there phone, an app where user can Fund thier account and
               Transfer.

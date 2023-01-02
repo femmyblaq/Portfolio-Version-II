@@ -71,19 +71,22 @@
         </div>
       </div>
     </div>
-    <button
-      @click="messageModal"
-      type="submit"
-      class="btn btn-outline-success btn-lg rounded-0"
-    >
-      Send Message! <i class="fas fa-location-arrow"></i>
-    </button>
+    <span>
+      <button
+        @click="messageModal"
+        type="submit"
+        style="font-family: 'Roboto Mono'"
+        class="btn btn-outline-success btn-lg rounded-0"
+      >
+        Send Message! <i class="fas fa-location-arrow"></i>
+      </button>
+    </span>
   </Form>
 </template>
 <script>
 import { Form, Field } from "vee-validate";
 import * as yup from "yup";
-import firebase from "firebase/app";
+// import firebase from "firebase/app";
 import "firebase/database";
 import { mapMutations } from "vuex";
 export default {
@@ -105,15 +108,15 @@ export default {
     };
   },
   mounted() {
-    firebase.initializeApp(this.firebaseConfig);
+    // firebase.initializeApp(this.firebaseConfig);
   },
   methods: {
-    ...mapMutations(["MODAL"]),
+    ...mapMutations(["toggleModal"]),
     messageModal() {
-      this.MODAL();
+      this.toggleModal();
+      console.log("from Dynmic pg");
     },
     onSubmit() {
-      this.MODAL();
       const formData = {
         name: this.username,
         email: this.email,
