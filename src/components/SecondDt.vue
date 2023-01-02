@@ -34,7 +34,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="lg-img" src="../assets/imgs/libHome.png" alt="" />
+              <img class="lg-img" src="../assets/imgs/e-walletImg.png" alt="" />
               <img
                 src="../assets/imgs/libHome.png"
                 class="sm-img d-none"
@@ -43,7 +43,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../assets/imgs/libHome.png"
+                src="../assets/imgs/e-walletDshbordImg.png"
                 class="sm-img d-none"
                 alt=""
               />
@@ -51,7 +51,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="../assets/imgs/libHome.png"
+                src="../assets/imgs/e-walletImg.png"
                 class="sm-img d-none"
                 alt=""
               />
@@ -279,6 +279,24 @@
 
     h3 {
       color: #fff !important;
+    }
+  }
+}
+@media (min-width: 414px) and (max-width: 513px) {
+  .container {
+    padding: 20px !important;
+  }
+  .container-fluid {
+    width: 350px;
+    height: 252px;
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 350px;
+          height: 252px;
+          border-radius: 20px;
+        }
+      }
     }
   }
 }

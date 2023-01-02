@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <PreloaderVue v-if="loads" :class="{ rokky: !loads }" /> -->
+    <PreloaderVue v-show="!loads" :class="{ rokky: loads }" />
     <MessagePopoverVue v-show="showMessageModal" />
 
     <SecondVue />
@@ -14,13 +14,13 @@ import MessagePopoverVue from "./components/MessagePopover.vue";
 // import HeaderVue from "./components/Header.vue";
 import FooterVue from "./components/Footer.vue";
 import SecondVue from "./components/SecondHome.vue";
-// import PreloaderVue from "./components/Preloader.vue";
+import PreloaderVue from "./components/Preloader.vue";
 import { mapState } from "vuex";
 
 export default {
   data() {
     return {
-      loads: true,
+      loads: false,
       xPos: 0,
       yPos: 0,
       speed: 2,
@@ -34,7 +34,7 @@ export default {
   },
   mounted() {
     window.addEventListener("load", () => {
-      this.loads = false;
+      this.loads = true;
     });
   },
   methods: {},
@@ -42,7 +42,7 @@ export default {
     FooterVue,
     MessagePopoverVue,
     // HeaderVue,
-    // PreloaderVue,
+    PreloaderVue,
     SecondVue,
   },
 };

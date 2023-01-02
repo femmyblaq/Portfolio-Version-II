@@ -73,13 +73,13 @@
               </a>
             </li>
           </router-link>
-          <div>
+          <li>
             <button class="btn btn-outline-success resume py-1">
               <a href="../assets/FemmyHY.pdf" class="text-decoration-none"
                 >Resume</a
               >
             </button>
-          </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -110,6 +110,10 @@ export default {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
   backdrop-filter: blur(5px);
+
+  .navbar-toggle {
+    border: none;
+  }
 }
 .navbar-collapse {
   ul li.active a {
@@ -166,16 +170,18 @@ export default {
       }
     }
   }
-  .navbar-collapse .navbar-nav div {
-    display: flex;
-    justify-content: end;
-    padding-top: 9px;
-  }
+  // .navbar-collapse .navbar-nav div {
+  //   display: flex;
+  //   justify-content: end;
+  //   padding-top: 9px;
+  //   width: 40%;
+  // }
   .navbar {
     padding: 10px 20px;
   }
   .navbar-toggler {
     padding: 0 !important;
+    border: none;
   }
   .navbar-toggler:focus {
     box-shadow: none !important;

@@ -86,6 +86,26 @@ export default {
   }
 }
 @media (min-width: 414px) and (max-width: 490px) {
+  #project-heros {
+    // align-items: center;
+    justify-content: center;
+    background: url("../assets/imgs/mobileTechDesigns.png") no-repeat center;
+    width: 100%;
+    // height: 60%;
+    background-size: contain;
+    // margin: auto;
+    .project-home {
+      // height: 60vh;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      // margin-top: -50px;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1180px) {

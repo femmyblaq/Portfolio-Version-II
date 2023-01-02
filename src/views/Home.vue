@@ -506,14 +506,9 @@ export default {
 .nav-item a:active {
   background-color: #0f0 !important;
   transform: rotate(0);
-  // width: 15px;
-  // height: 15px;
-  // border: 1px solid #000;
 }
 .nav-item a:hover {
   background-color: #000;
-  /* border: 2px solid #ff0000; */
-  /* box-shadow: 40px 10px #f00; */
 }
 
 .nav-item a:is(:link, :active, :visited).active {

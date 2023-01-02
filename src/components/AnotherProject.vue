@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 d-flex justify-content-center m-auto">
+      <div class="col-lg-6 d-flex for-img justify-content-center m-auto">
         <img
           draggable="false"
           data-aos="zoom-in"
@@ -78,7 +78,7 @@
           alt=""
         />
       </div>
-      <div class="col-lg-6 d-flex justify-content-center m-auto">
+      <div class="col-lg-6 d-flex for-img justify-content-center m-auto">
         <img
           draggable="false"
           data-aos="zoom-in"
@@ -167,7 +167,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-@media (min-width: 360px) and (max-width: 567px) {
+@media (min-width: 200px) and (max-width: 410px) {
   .container {
     .row {
       .col-lg-6 {
@@ -175,6 +175,36 @@
         .laptop {
           width: 300px !important;
           margin-left: 40px !important;
+        }
+        .ipad {
+          width: 100px !important;
+          z-index: 11;
+          bottom: 36px !important;
+          right: 70% !important;
+        }
+        .mobile {
+          width: 80px !important;
+          z-index: 11;
+          bottom: 36px !important;
+          right: 5% !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 414px) and (max-width: 499px) {
+  .container {
+    // margin-top: 20px !important;
+    .row {
+      .for-img {
+        margin-top: 60px !important;
+      }
+
+      .col-lg-6 {
+        // margin: 10px 0 !important;
+        .laptop {
+          width: 300px !important;
+          margin: 0 !important;
         }
         .ipad {
           width: 100px !important;

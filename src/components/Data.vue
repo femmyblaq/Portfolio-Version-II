@@ -178,6 +178,24 @@
     transition: 200ms ease-in-out;
   }
 }
+@media (min-width: 414px) and (max-width: 513px) {
+  .container {
+    padding: 20px !important;
+  }
+  .container-fluid {
+    width: 350px;
+    height: 252px;
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 350px;
+          height: 252px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 250px) and (max-width: 359px) {
   .project-top {

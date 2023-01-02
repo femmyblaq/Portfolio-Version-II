@@ -130,7 +130,7 @@ export default {
         }
       }
       div {
-        width: 250px;
+        width: 180px;
         height: 2px;
         background-color: #023020;
         margin: auto 20px;
@@ -149,8 +149,8 @@ export default {
   }
 
   .container {
-    margin: 200px auto !important;
-    padding: 0 !important;
+    margin: 40px auto !important;
+    padding: 0 20px !important;
     width: 100% !important;
   }
   .project-content {
