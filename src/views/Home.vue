@@ -938,7 +938,7 @@ export default {
   }
 
   #heros .row .col-lg-6 .intro .w-25 {
-    width: 30% !important;
+    width: 40% !important;
   }
 
   #heros .row .col-lg-6 p {

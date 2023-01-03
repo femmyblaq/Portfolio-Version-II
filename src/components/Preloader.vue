@@ -14,7 +14,7 @@
 
 <style lang="scss" scoped>
 #rocket-container {
-  position: absolute;
+  position: fixed;
   width: 100%;
   overflow: hidden !important;
   height: 100vh;
@@ -37,8 +37,8 @@
   width: 100px;
   z-index: 1;
   /* // left: 50%; */
-  /* // top: 50%; */
-  bottom: 10px;
+  top: 50%;
+  // bottom: 10px;
   animation: rocket 0.01s ease infinite alternate;
   /* // transform: translate(-50%, -50%); */
 }

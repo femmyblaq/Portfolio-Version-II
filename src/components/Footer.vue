@@ -85,25 +85,27 @@
             data-aos="flip-right"
             class="d-flex justify-content-center shadow align-items-center github"
           >
-            <a href="" class="text-white"
+            <router-link to="https://github.com/femmyblaq" class="text-white"
               ><i class="fab fa-1x fa-github"></i
-            ></a>
+            ></router-link>
           </li>
           <li
             data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center linked-in"
           >
-            <a href="" class="text-white"
+            <router-link
+              to="https://www.linkedin.com/femmyhy"
+              class="text-white"
               ><i class="fab fa-1x fa-linkedin-in"></i
-            ></a>
+            ></router-link>
           </li>
           <li
             data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center instagram"
           >
-            <a href="" class="text-white"
+            <router-link to="" class="text-white"
               ><i class="fab fa-1x fa-instagram"></i
-            ></a>
+            ></router-link>
           </li>
         </ul>
         <ul class="list-unstyled d-flex">
@@ -111,9 +113,9 @@
             data-aos="flip-right"
             class="d-flex justify-content-center shadow align-items-center facebook"
           >
-            <a href="" class="text-white"
+            <router-link to="" class="text-white"
               ><i class="fab fa-1x fa-facebook"></i
-            ></a>
+            ></router-link>
           </li>
           <li
             data-aos="flip-right"
@@ -127,7 +129,7 @@
             data-aos="flip-right"
             class="ms-3 d-flex justify-content-center shadow align-items-center whatsapp"
           >
-            <a href="" class="text-white"
+            <a href="https://wa.me/9016290149" class="text-white"
               ><i class="fab fa-1x fa-whatsapp"></i
             ></a>
           </li>
@@ -224,11 +226,14 @@
 @media (min-width: 250px) and (max-width: 440px) {
   #footer {
     padding: 10px !important;
+    .row {
+      width: 100% !important;
 
-    .col-lg-3 {
-      margin: 30px 0;
-      img {
-        margin-left: 0 !important;
+      .col-lg-3 {
+        margin: 30px 0;
+        img {
+          margin-left: 0 !important;
+        }
       }
     }
   }

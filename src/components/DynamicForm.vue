@@ -181,7 +181,7 @@ form span {
 }
 .form-label {
   text-align: left;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono" !important;
   display: flex;
 }
 @media (min-width: 260px) and (max-width: 567px) {

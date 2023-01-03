@@ -2,7 +2,6 @@
   <div id="app">
     <PreloaderVue v-show="!loads" :class="{ rokky: loads }" />
     <MessagePopoverVue v-show="showMessageModal" />
-
     <SecondVue />
     <!-- <HeaderVue /> -->
     <router-view />

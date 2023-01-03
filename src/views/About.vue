@@ -23,7 +23,7 @@
           class="col-lg-4 col-12 d-flex justify-content-center"
         >
           <div class="overlay-container">
-            <img class="my_img" src="../assets/imgs/femmyHY-Profile.png" />
+            <img class="my_img" src="../assets/imgs/femmy-profile.png" />
             <div class="overlay"></div>
             <div class="box"></div>
           </div>
@@ -33,7 +33,7 @@
         </div>
         <div data-aos="flip-right" class="col-lg-6 theWorld">
           <h1 class="fw-bolder">The world revolving around technologies!</h1>
-          <p>
+          <p style="font-family: 'Fira Sans'">
             with the world involving around technology, it would be better an
             individual to evolve in it, if there's passion for it. So it has
             always been my passion to operate computers and to know how it
@@ -69,14 +69,14 @@
             </h2>
             <div></div>
           </div>
-          <p data-aos="fade-up">
+          <p data-aos="fade-up" style="font-family: 'Fira Sans'">
             Hi, I'm Femmy I'm a creative and innovative web developer based on
             Lagos city, Nigeria. <br />
             Since the world is moving toward technology! I decided to join the
             technicians in order to make the word a better place, make complex
             things look easy and cool.
           </p>
-          <p data-aos="fade-up">
+          <p data-aos="fade-up" style="font-family: 'Fira Sans'">
             I'm literally a quick learner in any kind of complex activities and
             can adapt to the team and surroundings quickly, my goal is to become
             a Full stack Engineer, been able to build app for both frontend and

@@ -472,6 +472,11 @@
     }
   }
 }
+@media (min-width: 200px) and (max-width: 610px) {
+  #other-projects {
+    width: 90% !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 1180px) {
   .my-btn {
     margin-top: 50px !important;

@@ -50,14 +50,16 @@
             data-aos="flip-right"
             class="d-flex justify-content-center shadow-sm align-items-center github"
           >
-            <a href="" class="text-dark"><i class="fab fa-1x fa-github"></i></a>
+            <a href="https://github.com/femmyblaq" class="text-dark"
+              ><i class="text-dark fab fa-1x fa-github"></i
+            ></a>
           </li>
           <li
             data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm linked-in"
           >
             <a href="" class="text-dark"
-              ><i class="fab fa-1x fa-linkedin-in"></i
+              ><i class="text-dark fab fa-1x fa-linkedin-in"></i
             ></a>
           </li>
           <li
@@ -65,7 +67,7 @@
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm instagram"
           >
             <a href="" class="text-dark"
-              ><i class="fab fa-1x fa-instagram"></i
+              ><i class="text-dark fab fa-1x fa-instagram"></i
             ></a>
           </li>
           <li
@@ -73,23 +75,23 @@
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm facebook"
           >
             <a href="" class="text-dark"
-              ><i class="fab fa-1x fa-facebook"></i
+              ><i class="text-dark fab fa-1x fa-facebook"></i
             ></a>
           </li>
           <li
             data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm twitter"
           >
-            <a href="" class="text-dark"
-              ><i class="fab fa-1x fa-twitter"></i
+            <a href="https://twitter.com/FemmyHy" class="text-dark"
+              ><i class="text-dark fab fa-1x fa-twitter"></i
             ></a>
           </li>
           <li
             data-aos="flip-right"
             class="ms-3 d-flex justify-content-center align-items-center shadow-sm whatsapp"
           >
-            <a href="" class="text-dark"
-              ><i class="fab fa-1x fa-whatsapp"></i
+            <a href="https://wa.me/9016290149" class="text-dark"
+              ><i class="text-dark fab fa-1x fa-whatsapp"></i
             ></a>
           </li>
           <!-- <li
@@ -170,6 +172,7 @@ export default {
       cursor: pointer;
 
       a i {
+        color: #000;
         transition: all 0.5s ease-in-out;
       }
     }
@@ -199,53 +202,51 @@ export default {
       }
     }
     .instagram:hover {
-      .instagram {
-        background: radial-gradient(
-            circle farthest-corner at 35% 90%,
-            #fec564,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle farthest-corner at 0 140%,
-            #fec564,
-            transparent 50%
-          ),
-          radial-gradient(
-            ellipse farthest-corner at 0 -25%,
-            #5258cf,
-            transparent 50%
-          ),
-          radial-gradient(
-            ellipse farthest-corner at 20% -50%,
-            #5258cf,
-            transparent 50%
-          ),
-          radial-gradient(
-            ellipse farthest-corner at 100% 0,
-            #893dc2,
-            transparent 50%
-          ),
-          radial-gradient(
-            ellipse farthest-corner at 60% -20%,
-            #893dc2,
-            transparent 50%
-          ),
-          radial-gradient(
-            ellipse farthest-corner at 100% 100%,
-            #d9317a,
-            transparent
-          ),
-          linear-gradient(
-            #6559ca,
-            #bc318f 30%,
-            #e33f5f 50%,
-            #f77638 70%,
-            #fec66d 100%
-          );
-      }
-      a {
-        color: #fff !important;
-      }
+      background: radial-gradient(
+          circle farthest-corner at 35% 90%,
+          #fec564,
+          transparent 50%
+        ),
+        radial-gradient(
+          circle farthest-corner at 0 140%,
+          #fec564,
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 0 -25%,
+          #5258cf,
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 20% -50%,
+          #5258cf,
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 100% 0,
+          #893dc2,
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 60% -20%,
+          #893dc2,
+          transparent 50%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at 100% 100%,
+          #d9317a,
+          transparent
+        ),
+        linear-gradient(
+          #6559ca,
+          #bc318f 30%,
+          #e33f5f 50%,
+          #f77638 70%,
+          #fec66d 100%
+        );
+    }
+    a {
+      color: #fff !important;
     }
   }
   .box {
