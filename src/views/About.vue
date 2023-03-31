@@ -137,6 +137,11 @@
               </li>
             </ul>
           </div>
+          <div class="icons-technology">
+            <ul class="d-inline-flex">
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="d-lg-none m-auto w-100 sm">
