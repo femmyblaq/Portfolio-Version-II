@@ -20,7 +20,7 @@
       <div class="row mx-auto w-75">
         <div
           data-aos="zoom-in-up"
-          class="col-lg-4 col-12 d-flex justify-content-center"
+          class="col-lg-4 d-flex justify-content-center"
         >
           <div class="overlay-container">
             <img class="my_img" src="../assets/imgs/femmy-profile.png" />
@@ -42,7 +42,7 @@
             Engineer and to be very good at it.
           </p>
         </div>
-        <div class="col-12 theWorld text-end">
+        <div class="theWorld text-end">
           <ul class="list-unstyled d-inline-flex">
             <li data-aos="fade-right"></li>
             <li data-aos="fade-up"></li>
@@ -332,7 +332,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1180px) {
+@media (min-width: 768px) and (max-width: 980px) {
   #about-heros {
     // align-items: center;
     justify-content: center;
@@ -381,6 +381,54 @@
   #About {
     width: 75%;
     margin: auto;
+  }
+}
+@media (min-width: 981px) and (max-width: 1100px) {
+  #about-heros {
+    width: 100%;
+    height: 35vh;
+    justify-content: center;
+    background: url("../assets/imgs/contact_design.png") no-repeat center;
+    background-size: contain;
+
+    .about-home {
+      height: 60vh;
+      display: grid;
+      align-items: center;
+      // margin-top: -50px;
+      justify-content: flex-start;
+      .px-5 {
+        margin-top: -140px;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  #my-pics-spot {
+    .row {
+      width: 90% !important;
+      .col-lg-2 {
+        display: none !important;
+      }
+      .col-lg-4 {
+        width: 50% !important;
+        justify-content: space-around !important;
+      }
+      .overlay-container {
+        // width: 500px;
+        .img {
+        }
+      }
+    }
+  }
+  #About {
+    .row {
+      .col-lg-7 {
+        width: 90% !important;
+      }
+    }
   }
 }
 </style>

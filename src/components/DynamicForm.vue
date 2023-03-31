@@ -8,43 +8,47 @@
             :rules="rules"
             v-slot="{ field, errorMessage, meta }"
           >
-            <span class="text-success" v-if="meta.valid && meta.touched"
+            <span class="text-success" v-show="meta.valid && meta.touched"
               >Field is valid</span
             >
             <span>{{ errorMessage }}</span>
             <input
               type="text"
+              v-model="name"
               v-bind="field"
+              placeholder="Username"
               class="form__input"
               :class="{ inputss: toggleLight, err: !meta.valid }"
             />
           </Field>
-          <label class="form-label" for="email" :class="{ label: toggleLight }"
+          <!-- <label class="form-label" for="email" :class="{ label: toggleLight }"
             >username</label
-          >
+          > -->
         </div>
       </div>
-      <div class="col-lg-6 ps-2 my-4">
+      <div class="col-lg-6 mid-input ps-2 my-4">
         <div class="form-div">
           <Field
             name="email"
             :rules="rules"
             v-slot="{ field, errorMessage, meta }"
           >
-            <span class="text-success" v-if="meta.valid && meta.touched"
+            <span class="text-success" v-show="meta.valid && meta.touched"
               >Field is valid</span
             >
             <span>{{ errorMessage }}</span>
             <input
               type="email"
+              v-model="email"
               v-bind="field"
+              placeholder="Email"
               class="form__input"
               :class="{ inputss: toggleLight, err: !meta.valid }"
             />
           </Field>
-          <label class="form-label" for="email" :class="{ label: toggleLight }"
+          <!-- <label class="form-label" for="email" :class="{ label: toggleLight }"
             >Email</label
-          >
+          > -->
         </div>
       </div>
       <div class="col-lg-12 px-2 mb-4">
@@ -54,26 +58,27 @@
             :rules="rules"
             v-slot="{ field, errorMessage, meta }"
           >
-            <span class="text-success" v-if="meta.valid && meta.touched"
+            <span class="text-success" v-show="meta.valid && meta.touched"
               >Field is valid</span
             >
             <span>{{ errorMessage }}</span>
             <input
               type="text"
+              v-model="message"
               v-bind="field"
+              placeholder="Message"
               class="form__input"
               :class="{ inputss: toggleLight, err: !meta.valid }"
             />
           </Field>
-          <label class="form-label" for="email" :class="{ label: toggleLight }"
+          <!-- <label class="form-label" for="email" :class="{ label: toggleLight }"
             >Message</label
-          >
+          > -->
         </div>
       </div>
     </div>
     <span>
       <button
-        @click="messageModal"
         type="submit"
         style="font-family: 'Roboto Mono'"
         class="btn btn-outline-success btn-lg rounded-0"
@@ -84,6 +89,7 @@
   </Form>
 </template>
 <script>
+import axios from "axios";
 import { Form, Field } from "vee-validate";
 import * as yup from "yup";
 // import firebase from "firebase/app";
@@ -102,7 +108,7 @@ export default {
         appId: "1:124250609917:web:e030de48296e2b7b464694",
         measurementId: "G-66B3FWHLMP",
       },
-      username: "",
+      name: "",
       email: "",
       message: "",
     };
@@ -118,12 +124,40 @@ export default {
     },
     onSubmit() {
       const formData = {
-        name: this.username,
+        name: this.name,
         email: this.email,
         message: this.message,
       };
 
       console.log(formData);
+      let data = {
+        members: [
+          {
+            email_address: this.email,
+            status: "subscribed",
+            merge_fields: {
+              FNAME: this.name,
+            },
+          },
+        ],
+      };
+      const dataJson = JSON.stringify(data);
+      const options = {
+        method: "POST",
+        headers: {
+          Authorization: "habeeb e94053372137fcaf7cecdc89af0921e1-us10",
+        },
+        body: dataJson,
+      };
+      axios
+        .post("https://us10.api.mailchimp.com/3.0/lists/1ab03b2e4e", options)
+        .then((res) => {
+          console.log(res);
+          if (res.status === 200) {
+            console("Working all perfectly");
+          }
+        })
+        .catch((err) => console.log(err));
     },
   },
   computed: {
@@ -149,10 +183,12 @@ form span {
   color: red;
   margin-top: auto;
 }
-</style>
-<style lang="scss">
+
 .form {
   width: 100%;
+  .form-div .err {
+    border-color: red;
+  }
 }
 
 .form__input {
@@ -188,9 +224,14 @@ form span {
   .form {
     .row {
       margin-bottom: 20px !important;
+      .mid-input {
+        margin-top: 0 !important;
+      }
       .col-lg-6,
       .col-lg-12 {
-        margin: 0 !important;
+        // margin: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
       }
       .form-label {
         display: flex;

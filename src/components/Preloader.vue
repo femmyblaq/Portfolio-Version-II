@@ -1,7 +1,7 @@
 <template>
   <div id="rocket-container" ref="rocketC">
     <img
-      src="../assets/imgs/icons8-rocket-64.png"
+      src="../assets/imgs/icons8-mission-64.png"
       alt="rocket"
       ref="rocket"
       id="rocket"

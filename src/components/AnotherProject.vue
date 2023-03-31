@@ -192,6 +192,13 @@
     }
   }
 }
+@media (min-width: 768px) and (max-width: 1280px) {
+  .container {
+    .row {
+      padding: 20px 40px;
+    }
+  }
+}
 @media (min-width: 414px) and (max-width: 499px) {
   .container {
     // margin-top: 20px !important;

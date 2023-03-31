@@ -469,6 +469,9 @@
     .link-spot {
       visibility: visible;
       transition: 0.5s all ease-in-out;
+      li a i:hover {
+        color: #0f0;
+      }
     }
   }
 }
@@ -478,6 +481,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1180px) {
+  #other-projects {
+    width: 90% !important;
+  }
   .my-btn {
     margin-top: 50px !important;
   }

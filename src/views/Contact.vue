@@ -170,6 +170,7 @@ export default {
       // border: 2px solid #ddd;
       border-radius: 8px;
       cursor: pointer;
+      // background-color: #ccc;
 
       a i {
         color: #000;
@@ -178,26 +179,26 @@ export default {
     }
     .github:hover {
       background-color: #000 !important;
-      a {
+      a i {
         color: #fff !important;
       }
     }
     .linked-in:hover,
     .twitter:hover {
       background-color: rgb(60, 148, 243) !important;
-      a {
+      a i {
         color: #fff !important;
       }
     }
     .whatsapp:hover {
       background-color: #25d366 !important;
-      a {
+      a i {
         color: #fff !important;
       }
     }
     .facebook:hover {
       background-color: rgb(4, 102, 207) !important;
-      a {
+      a i {
         color: #fff !important;
       }
     }
@@ -245,7 +246,7 @@ export default {
           #fec66d 100%
         );
     }
-    a {
+    a i {
       color: #fff !important;
     }
   }
@@ -283,13 +284,20 @@ export default {
     padding: 0 20px;
     .snd-col {
       margin-top: 100px;
+      padding: 0 !important;
     }
     .box {
       padding: 20px 0;
+      .form .row {
+        .col-lg-6 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
     }
   }
 }
-@media (min-width: 750px) and (max-width: 1180px) {
+@media (min-width: 750px) and (max-width: 980px) {
   #contact-heros {
     width: 100%;
     // height: 100vh;
@@ -317,6 +325,45 @@ export default {
 
     .col-lg-5 {
       padding-top: 70px;
+    }
+  }
+}
+@media (min-width: 980px) and (max-width: 1100px) {
+  #contact-heros {
+    width: 100%;
+    height: 35vh;
+    justify-content: center;
+    background: url("../assets/imgs/contact_design.png") no-repeat center;
+    background-size: contain;
+
+    .contact-home {
+      height: 60vh;
+      display: grid;
+      align-items: center;
+      // margin-top: -50px;
+      justify-content: flex-start;
+      .px-5 {
+        margin-top: -140px;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  #contact {
+    margin-top: 80px !important;
+    padding: 20px 20px;
+
+    .col-lg-5 {
+      // padding-top: 70px;
+      width: 48.5% !important;
+      .box {
+        padding: 0 !important;
+      }
+    }
+    .col-lg-1 {
+      width: 2% !important;
     }
   }
 }

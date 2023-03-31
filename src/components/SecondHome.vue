@@ -235,4 +235,17 @@ export default {
     width: 85% !important;
   }
 }
+@media (min-width: 982px) and (max-width: 1110px) {
+  // .navbar-toggler {
+  //   display: none;
+  // }
+  // .collapse {
+  //   display: none;
+  // }
+
+  .navbar-nav {
+    flex-direction: row;
+    width: 75% !important;
+  }
+}
 </style>

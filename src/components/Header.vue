@@ -17,18 +17,12 @@
           ><span class="third" :class="{ thirdBar: toggle }"></span>
         </div>
         <ul class="lg-links list-unstyled d-inline-flex mb-0">
-          <router-link
-            tag="li"
-            class="text-decoration-none"
-            to="/"
-            active-class="active"
+          <router-link class="text-decoration-none" to="/" active-class="active"
             ><a class="nav-link text-dark text-decoration-none fs-6 py-2">
               <span style="color: #0f0">01. </span>Home
-              </a
-            >
+            </a>
           </router-link>
           <router-link
-            tag="li"
             class="text-decoration-none"
             to="/about"
             active-class="active"
@@ -38,7 +32,6 @@
             >
           </router-link>
           <router-link
-            tag="li"
             class="text-decoration-none"
             to="/project"
             active-class="active"
@@ -48,7 +41,6 @@
             >
           </router-link>
           <router-link
-            tag="li"
             class="text-decoration-none"
             to="/contact"
             active-class="active"
@@ -75,17 +67,12 @@
             ><span style="color: #0f0">01.</span> Home</a
           >
         </li> -->
-      <router-link
-        tag="li"
-        class="text-decoration-none"
-        to="/"
-        active-class="active"
+      <router-link class="text-decoration-none" to="/" active-class="active"
         ><a class="nav-link text-dark text-decoration-none fs-6 py-2">
           <span style="color: #0f0">01. </span>Home</a
         >
       </router-link>
       <router-link
-        tag="li"
         class="text-decoration-none"
         to="/about"
         active-class="active"
@@ -94,7 +81,6 @@
         >
       </router-link>
       <router-link
-        tag="li"
         class="text-decoration-none"
         to="/project"
         active-class="active"
@@ -103,7 +89,6 @@
         >
       </router-link>
       <router-link
-        tag="li"
         class="text-decoration-none"
         to="/contact"
         active-class="active"
